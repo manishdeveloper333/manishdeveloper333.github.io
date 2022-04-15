@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript project-5</title>
+    <style>
+    *{margin :0;
+      padding:0;
+    max-height: 720px; }
+                 
+   header{
+    color: cyan; text-shadow: 4px 3px 12px orangered;
+    text-transform: capitalize;
+    background-color: rgb(195, 0, 255); font-family: 'Supermercado One', cursive; 
+    height: 120px; font-size: 2rem; text-align: center; line-height: 100px;}
+    
+    .box{   
+   width: 90%;
+   margin: auto;margin-top: 50px;
+   display: grid;
+   grid-template-rows: 720px 720px;
+   grid-template-columns: 40% 60%;
+  grid-column-gap: 50px;
+    }
+    h3
+    {font-family: 'Supermercado One', cursive; 
+    color: purple; 
+    text-transform: capitalize;
+    font-size: 2.2rem; line-height: 70px;
+    }
+      
+  #div1 { padding: 44px;
+  background-color: rgb(0, 255, 157);}
+
+  button{ padding: 10px; margin: 2px;
+     color: white; background-color: blue;
+     border: 3px solid orangered;
+     border-radius: 25px ;
+ }
+button:hover{
+    background-color: white; color:red;border :2px solid white}
+    #align{
+        color: white; font-size: 1.3rem;
+    }
+
+    #div2 {padding: 14px;
+  background-color: rgb(132, 0, 255);}
+
+    </style>
+ </head>
+ <body >
+  <header>
+      onclick property
+  </header>
+ <div class="box">
+ <div id="div1"><h3>Text Alignment</h3>
+<button onclick="document.getElementById('align').style.textAlign='left'">left</button>
+<button onclick="document.getElementById('align').style.textAlign='center'">center</button>
+<button onclick="document.getElementById('align').style.textAlign='right'">right</button> </h3>
+
+<h3> background-color</h3>
+<button style="background-color: red; padding:15px; border-radius:5px;" onclick="document.getElementById('div2').style.backgroundColor='red'"></button>
+<button style="background-color: yellow;padding:15px;border-radius:5px;"onclick="document.getElementById('div2').style.backgroundColor='yellow'"> </button>
+<button style="background-color: blue;padding:15px;border-radius:5px; "onclick="document.getElementById('div2').style.backgroundColor='blue'"> </button>
+<button style="background-color: darkorange;padding:15px;border-radius:5px; "onclick="document.getElementById('div2').style.backgroundColor='darkorange'"> </button>
+
+<h3>Text color</h3>
+    <button onclick="document.getElementById('div2').style.color='white'">white</button>
+    <button onclick="document.getElementById('div2').style.color='pink'">pink</button>
+    <button onclick="document.getElementById('div2').style.color='darkblue'">darkblue</button>
+    <button onclick="document.getElementById('div2').style.color='lightgreen'">green</button>
+    
+<h3>Style-Text</h3>
+    <button style="background-color: rgb(247, 80, 2);border-radius:20px;" onclick="document.getElementById('div2').style.fontFamily ='cursive'"> cursive</button>
+    <button style="background-color: rgb(247, 80, 2);border-radius:20px;"  onclick="document.getElementById('div2').style.fontFamily ='Impact,Charcoal,sans-serif'"> Impact</button>
+    <button style="background-color: rgb(247, 80, 2);border-radius:20px;"  onclick="document.getElementById('div2').style.fontFamily ='gigi'">Gigi</button>
+    <button style="background-color: rgb(247, 80, 2);border-radius:20px;"  onclick="document.getElementById('div2').style.fontFamily ='mistral'">Mistral</button>
+<h3>
+  border-Radius
+</h3>
+    <button style="background-color: rgb(132, 0, 255);"onclick="document.getElementById('div2').style.borderRadius='200px'">200px</button>
+    <button style="background-color: rgb(132, 0, 255);"onclick="document.getElementById('div2').style.borderRadius='150px 500px 30px 200px'">150px</button>
+    <button style="background-color: rgb(132, 0, 255);"onclick="document.getElementById('div2').style.borderRadius=' 500px 150px 300px'">500px</button>
+    <button style="background-color: rgb(132, 0, 255);"onclick="document.getElementById('div2').style.borderRadius='400px 300px 200px 500px '">400px</button>
+
+</div>
+ <div id="div2" align="center">
+    <div id="align"> <h1>Text align</h1> </div>
+    <br><br>
+ <h2>
+    HTML is the standard markup language for Web pages. <br><br>
+
+    With HTML you can create your own Website.<br><br>
+
+  <br><br>
+<br>
+    CSS is the language we use to style an HTML document.<br><br>
+
+    CSS describes how HTML elements should be displayed.<br><br>
+
+   <br><br>
+<br>
+    JavaScript is the world's most popular programming language.<br><br>
+    
+    JavaScript is the programming language of the Web.<br><br>
+    
+ 
+    
+   <br><br>
+ <h2>
+ </div>
+</div>
+</div>
+</body>
+</html>
