@@ -8,7 +8,5 @@
 
 <a href="https://manishdeveloper333.github.io/Projects/Javascript project- 6 box onclick.html"> temp </a>
 
-
-
-<a href="https://manishdeveloper333.github.io/case2.html">web case 2</a>
+<a href="https://manishdeveloper333.github.io/final template.html">html final page</a>
 
