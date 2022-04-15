@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food test</title>
+   
+ <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(14, 188, 211);
+}
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+.company {
+  width: 10%;
+  float: left;
+  line-height: 100px;
+}
+
+.company a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: yellow;
+  font-weight: 700;
+  font-family: footlight mt;
+}
+
+.text {
+  width: 90%;
+  float: right;
+}
+
+.text ul {
+  text-align: right;
+}
+.text ul li {
+  display: inline;
+  line-height: 100px;
+}
+.text ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(236, 232, 232);
+  font-family: pacifico;
+
+  padding: 1%;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+.text ul li a:hover {
+  background-color: rgb(232, 241, 232);
+  color: red;
+}
+
+body {
+  background-image: url(food.jpg);
+}
+  h1{
+    display: none;
+  }
+
+/* this is the mobile size */
+/* with using the javascrpit tool */
+
+@media (max-width: 650px) {
+  body {
+    background-image: url(aquire.jpg);
+
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .company {
+    width: 40%;
+    float: left;
+    line-height: 100px;
+  }
+  .text {
+    width: 60%;
+  }
+
+  .text ul {
+    margin: auto;
+  
+    text-align: center;
+  }
+  .text ul li {
+    line-height: 40px;display: block;
+    margin-top: 12%;
+  }
+  .text ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(236, 232, 232);
+    font-family: pacifico;
+
+    padding: 4%;
+    border-radius: 25px;
+    text-transform: capitalize;
+  }
+  .text ul li a:hover {
+    background-color: rgb(232, 241, 232);
+    color: red;
+  }
+
+    h1{
+          display:inline;  float: right;margin-top: 20px;
+         padding: 2%; background-color: black; color: white; text-align: center; border-radius: 25px;
+         }
+         h1:hover{
+         background-color:white; color: orangered; 
+         }
+            #login{
+             width: 50%; margin: auto; padding: 3% ; display: none; margin-top: 3%; margin-right: 20%; line-height: 100px;
+         }
+       
+         input{
+             display:block; width: 100%; height: 190px; margin-bottom: 10px; 
+         }
+ }
+ </style>
+
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+            <div class="company"><a href="">Spicy Food</a></div>
+            
+          <h1 onclick="document.getElementById('login').style.display='block'">
+            click here
+          </h1>
+         
+            <div class="text" id="login">
+               
+                <ul>
+                    <li><a href="">home</a></li>
+                
+                    <li><a href="">about</a></li>
+                
+                    <li><a href="">service</a></li>
+                
+                    <li><a href="">dropdown</a></li>
+                
+                    <li><a href="">contact </a></li>
+                </ul>
+                </div>
+                </div>
+                </div>
+</body>
+</html>
