@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-6</title>
+    <style>
+ 
+        #container2{
+            margin-left:250px;
+           margin-top:-728px;
+            width: 80%;
+            height: 880px;
+            background-color: rgb(0, 119, 128);
+            display: flex;
+            justify-content: center;
+            align-items: center; border-radius: 80px 10px 80px;
+        }
+         #box1{ display: none;
+           }
+        #box2{ display: none; }
+        
+        #box3{ display: none;}
+          
+        #box4{ display: none;}
+
+        #box5{ display: none;}
+
+        #box6{ display: none;}
+
+        #box7{
+         display: none;}
+
+        #box8{
+         display: none;}
+
+        #box9{
+         display: none;}
+
+        #box10{
+         display: none;}
+
+        #box11{
+        display: none;}
+
+        #box12{
+        display: none;}
+
+        .box{
+            width: 100px;
+            height: 130px;
+            background-color: rgb(233, 231, 231);
+            margin-left:10px; text-align: center;line-height: 120px;
+            margin-top: 10px;
+        }
+        button{ width: 132px;padding: 28px; 
+          display: block ; margin-left: 50px; margin-top: 40px;
+              color: white; color: blue;font-weight: 700;
+              border: 8px solid rgb(1, 179, 170);
+             border-radius: 25px 10px;
+        }
+        button:hover{
+            background-color:  rgb(1, 179, 170);
+        }
+     
+    </style>
+</head>
+<body>
+   
+        <button onclick="document.getElementById('box1').style.display='block'">1</button>
+        <button onclick="document.getElementById('box2').style.display='block'">2</button>
+        <button onclick="document.getElementById('box3').style.display='block'">3</button>
+        <button onclick="document.getElementById('box4').style.display='block'">4</button>
+        <button onclick="document.getElementById('box5').style.display='block'">5</button>
+        <button onclick="document.getElementById('box6').style.display='block'">6</button>
+
+        <div id="container2">
+              <div id="box1">
+            <div class="box">1</div>
+        </div>
+        <div id="box2">
+            <div class="box">1</div><div class="box">2</div>
+        </div>
+
+        <div id="box3">
+            <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+        </div>
+
+        <div id="box4">
+            <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
+        </div>
+
+        <div id="box5">
+           <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div><div class="box">5</div>     
+        </div>
+
+        <div id="box6">
+          <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div><div class="box">5</div><div class="box">6</div>
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
