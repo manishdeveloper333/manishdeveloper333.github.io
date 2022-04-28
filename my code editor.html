@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my code editor</title>
+    <link rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+      <!-- google font icon link -->
+    <style>
+      *{margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: algerian;text-transform: capitalize;}
+      
+  .box{
+  display: grid;
+  grid-template-columns:  auto;
+  grid-template-rows:  80px 55px;}
+
+ .box .item1 {
+  text-align: center;
+  padding: 20px 0; word-spacing: 10px;
+  font-size: 27px;
+  background-color: blueviolet}
+#para{ font-size: 1rem; color: tomato;}
+  .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 780px 780px;
+  gap: 10px; 
+  height: 780px;}
+.container div {
+  font-size: 25px;
+  border: 2px solid orangered;
+}
+
+a { color: white;
+  text-decoration: none;
+}
+.box .item2{padding: 10px; word-spacing: 30px;
+  background-color: gray; font-size: 2rem;
+  
+}
+button{ float: right; margin-right: 40px;font-size: 1.5rem;
+    border: 0; border-radius: 5px;padding: 5px;
+   width: 100px; color: white; background-color: darkgreen; 
+}
+button:hover{
+background-color: white; color: darkgreen;
+}
+.form-code{
+    background-color:black; min-width: 100%; 
+    height: 780px;  resize: none; padding: 20px;
+}
+textarea{width: 100%; 
+    color: white;
+}
+.item4 { padding: 10px;
+}
+</style>
+<!-- css style code -->
+</head>
+<body>
+<div class="box">
+  <div class="item1"> <a href="">code editor</a> <p id="para">Click on the button to show code</p></div>
+  <div class="item2"> <a href="">
+    <span class="material-symbols-outlined">
+      menu
+    </span> <span class="material-symbols-outlined">
+      print
+    </span>
+    <span class="material-symbols-outlined">
+      web_asset
+    </span>
+    <span class="material-symbols-outlined">
+      code
+    </span>
+  </a><button id="btn">run </button> </div>
+  </div>
+<div class="container">
+    <div class="item3"> 
+      <textarea class="form-code" id="input" placeholder="enter code" aria-label="with textarea"></textarea>
+    </a> </div>
+    <div class="item4"  id="output"> output :-</div>
+   </div>
+
+   <!-- jquery link with function -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $("#btn").click(function () {
+              data = $("#input").val();
+              $("#output").html(`${data}`);
+            });
+          });
+    </script>
+</body>
+</html>
