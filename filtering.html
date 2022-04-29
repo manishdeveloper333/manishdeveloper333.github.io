@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h11{ width: 500px;
+            border: 2px solid green; }    
+        .filter{
+        width: 100px; height: 80px; border: 2px solid red;
+        }  
+         .filter2{
+        width: 100px; height: 80px; border: 2px solid red;
+        }  
+         .filter3{
+        width: 100px; height: 80px; border: 2px solid red;
+        } 
+         .filter4{
+        width: 100px; height: 80px; border: 2px solid red;
+        }   
+    </style>
+</head>
+<body>
+
+    <div class="h11" >
+        <h1>hiii first ()</h1>
+        <h1>hiii2</h1>
+        <h1>hiii3</h1>
+        <h1>hiii4 eq filter</h1>
+        <h1>hiii5 last()</h1>
+    </div> <br><br>
+ <hr> <br> <br>
+    <div class="filter"> <h2>company 1</h2></div>
+      <div class="filter2"> <h2>company 2</h2></div>
+        <div class="filter3"> <h2>company 3</h2></div>
+          <div class="filter4"> <h2>company 4</h2></div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").first().css({"color" :"orange"})  ;     //first methode filter color
+        });
+          $("h1").last().css({ "color": "red" }) ;   // last methode filer color
+            
+    $("h1").eq(3).css({ "color": "blue" })  ;    // eq methode filer color
+
+      $("div").filter(".filter").css({ "color": "blue" });   // filter  with  class element
+
+     
+      
+                //  filter with last fliterner function
+            
+    $("div").not(".filter3").css({ "color": "green" });    // target element nort show 
+
+
+    </script>
+</body>
+</html>
