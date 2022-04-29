@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box * { 
+  display: block;
+  border: 2px solid green;
+  color: red;
+  padding: 5px;
+  margin: 15px;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="box" style="width:500px;"> div inside
+<h1>h1 header</h1>
+<h2> h2 header</h2>
+<p>my paragraph</p>
+<span>span</span>
+<p>my paragraph</p>
+<h1>h1 header</h1>
+<h2> h2 header</h2>
+
+
+    </div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+         $(document).ready(function () {
+
+    //    this is the sibling method to all of span tag 
+
+          $("span").siblings().css({
+        "border": "3px solid blue" ,"background-color": "yellow"});
+ });
+
+//this is the next spoan tag siblibng
+
+        //      $("span").next().css({
+        //          "border": "3px solid yellow", "background-color": "black"
+        //      });
+        //  });
+
+
+
+ //this is the next all spoan tag siblibng        
+
+        //      $("span").nextAll().css({
+        //          "border": "3px solid yellow", "background-color": "black"
+        //      });
+        //  });
+
+ //this is the next unit spoan tag siblibng     
+
+    //    $("span").nextUntil("h2").css({
+    //         "border": "3px solid yellow", "background-color": "black"
+    //     });
+    //      });   
+
+ //this is the prevoius of span tag siblibng   
+
+//  $("span").prev().css({
+//      "border": "3px solid yellow", "background-color": "black"
+//       });
+
+
+ //this is the prevoius all of span tag siblibng   
+
+    //    $("span").prevAll().css({
+    //        "border": "3px solid yellow", "background-color": "black"
+    //          });
+    
+// this is the prevoiusunit() of span tag siblibng  
+
+// div for all above in preview
+//        $("span").prevUntil("div").css({
+//           "border": "3px solid yellow", "background-color": "black"
+//             });
+
+
+
+//});
+  
+    </script>
+    
+    
+</body>
+</html>
