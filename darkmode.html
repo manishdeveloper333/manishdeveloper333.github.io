@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<style>
+      *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+        }
+        #box{
+            margin: auto;
+            padding: 20px;  transition: 0.8s;
+            border: 3px solid orangered;   box-shadow: 0px 0px 20px 5px gray;
+            width:500px ;border-radius: 25px;
+            height: 600px;background-color:aquamarine;
+        }
+        #box:hover{
+
+            transform: translate(10px,60px);
+            transition:0.9s;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8)
+        }
+        .button2 { width: 50px;
+            height: 50px;
+            background-color: whitesmoke;
+            float: left;
+            border-radius: 50%;}
+            .button3  { width: 50px;
+            height: 50px;
+            background-color: whitesmoke;
+            float: right;
+            
+            border-radius: 50%;}
+i{
+    font-size: 1.2rem;
+
+}
+.btn1{
+    background-color: rebeccapurple;color: aliceblue; width: 50px;
+            height: 50px;
+            margin-left:100px;
+            margin-top: 50px;
+    
+            
+            border-radius: 50%;}
+            
+        #top{  border: 3px solid green; width: 200px;min-height: 320px;
+            display: block;border-radius: 25px;
+             box-shadow: 0px 0px 20px 5px gray;
+            margin: auto;  position: relative;top: 150px;}
+            div:hover {border-radius: 25px;
+          background-color: yellow;}
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+.centered{
+    text-align: center;line-height: 30px;
+}
+div p{
+    color: red;
+}
+h2{
+    color: #ff0000;
+}
+h2.highlight:hover {
+  color: blueviolet;
+  font-size: 22px;
+} 
+h2.highlight::first-letter {
+ color: blueviolet;
+  font-size: 200%;
+} 
+
+h1 {
+  display: none;width: 160px;     box-shadow: 0px 0px 20px 5px gray;
+  background-color: blueviolet;border-radius: 25px;
+  padding: 20px;margin-top: 160px;
+}
+h1::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+h1::first-line {
+  color: yellow;
+  font-variant: small-caps;
+}
+
+div:hover h1 {
+  display: block;
+}
+</style>
+</head>
+<body id="all">
+    <button class="btn1" title="Darkmode" onclick="document.getElementById('all').style.backgroundColor='black'"><i class="fas fa-cloud-moon"></i></button>
+   <div id="box">
+ 
+    <button class="button2" title="lightmode" onclick="document.getElementById('box').style.backgroundColor='white'"><i class="fas fa-sun"></i></button>
+    <button class="button3" title="Darkmode" onclick="document.getElementById('box').style.backgroundColor='black'"><i class="fas fa-cloud-moon"></i></button>
+ 
+            <div id="top">
+               
+                    <div class="centered">
+                        <img src="profile.svg" alt="Avatar woman">
+                        <h2 class="highlight">Jane Flex</h2>
+                        <p>web developer</p>
+                        <p>graphics-shadow</p>
+                    </div>
+                    
+                </div>
+                    <h1>Darkmode</h1>
+    </div>
+</body>
+</html>
