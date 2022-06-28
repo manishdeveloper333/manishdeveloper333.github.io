@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin:
+                0;
+                padding: 0;
+            }
+        
+            .carousel-item img {
+                height: 87vh;object-fit: fill;
+            }
+        
+            @media(max-width:650px) {
+                .carousel-item img {
+                    height: 40vh;
+                }
+        
+            }
+            .fa-brands{
+               float: right;margin-left: 10px;
+            }
+   
+            .btn:hover{background-color: green;
+            }
+      
+       
+             .wrap{
+            height: 75vh;
+            width: 100%;
+          
+background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0,198,255,1) 73%);
+
+        }
+            .banner{
+        background: url(img/iron-removebg-preview.png);
+        width: 100%;position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+    h3{
+        position: absolute;color:white;margin-top: 10%; margin-left: 130PX;
+    }
+    h5{
+        position: absolute; color: white;font-size: small;margin-top: 14%; margin-left: 130PX;
+    }
+    #ms{
+        color: red;
+    }
+      #ms2{
+        color: rgb(15, 12, 207);
+    }.fa-brands{
+        color: white;
+    }
+    .box{
+    width: 80%;
+    height: 50vh; display: flex;
+   
+   margin-left: 26%;
+   
+    
+}
+.box .card{
+    width: 20%;margin-top: -10%;
+    height: 40vh;
+    background-color: rgb(16, 250, 219);
+    margin-left: 10px;
+    box-shadow: 2px 2px 20px black
+}
+      .icon{
+    height: 150px;
+    width: 150px;
+   margin-top: 10px;
+   margin-left: 50px;
+}
+.icon i
+{
+    text-align: center;
+    color: rgba(58, 211, 58, 0.521);
+   padding: 50px 40px;margin-left:35%;
+   padding: 20px;background: rgb(68, 0, 255);border-radius: 50%;
+   text-shadow: 1px 4px 1px black;
+}
+
+
+
+.content{
+    height: 50%;
+    padding: 20px 28px;
+   
+}
+
+.c1 { color: black;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase; 
+    text-shadow: none;
+    font-weight: bolder;
+}
+h6{ color: rgb(236, 11, 11);
+}
+.card:hover{
+    background-color: rgba(62, 12, 180, 0.925);
+
+
+}
+.card:hover   .content .c1 , .c2,h6{
+    color: white;
+   
+
+
+}
+.card:hover .icon i {
+    color: white;background-color: orangered;
+    text-shadow: 10px 1px 1px black;
+}
+
+.rounded-circle{
+    margin-top: -18%;padding: 20px;
+    margin-left: 150px ;
+}
+.spy{
+   margin-left: 250px;
+}
+      </style>
+</head>
+<body>
+    
+
+<header class="py-3" style="
+background-color: rgb(5, 211, 177);">
+    <div class="container">
+        <a class="p-5 text-white text-decoration-none h3 " ><span id="ms">Santa</span> <span id="ms2">Maria</span></a>
+        <i class="fa-brands fa-facebook h4"></i>
+        <i class="fa-brands fa-facebook-messenger h4"></i>
+        <i class="fa-brands fa-instagram h4"></i>
+        <i class="fa-brands fa-youtube h4"></i>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg  bg-white">
+    <div class="container">
+        <a class="navbar-brand "><i class="fas fa-laptop-code" ></i>
+             </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Get Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Play Gound</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Client Side
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">HTML Guide</a></li>
+                        <li><a class="dropdown-item" href="#">CSS Guide</a></li>
+                        <li><a class="dropdown-item" href="#">JavaScript Guide</a></li>
+                        <li><a class="dropdown-item" href="#">TypeScript Guide</a></li>
+                        <li><a class="dropdown-item" href="#">ECMA Script Guide</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">React</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Server Side
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="#">PHP Guide</a></li>
+                        <li><a class="dropdown-item" href="#">Wordpress Guide</a></li>
+                        <li><a class="dropdown-item" href="#">CodeIgniter Guide</a></li>
+                        <li><a class="dropdown-item" href="#">Laravel Guide</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Node Guide</a></li>
+                        <li><a class="dropdown-item" href="#">Express Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Developer Tools
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="#">Project Setup</a></li>
+                        <li><a class="dropdown-item" href="#">Template</a></li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Admin Template</a></li>
+
+                    </ul>
+                </li>
+                
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="" class="nav-link btn btn-danger text-white mx-2">Registration</a></li>
+                <li class="nav-item"><a href="" class="nav-link btn btn-primary text-white">Sign In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- image banner -->
+<div class="wrap">
+<div class="banner">
+    <h3>Saita is a modern and easy-to-use <br> web agency website template.</h3>
+    <h5>
+     This
+        allows you to SAVE a lot of your precious time<br> that you can otherwise invest in promoting<br> 
+    </h5>
+</div>
+</div>
+
+
+  
+
+
+
+<!-- 4 box -->
+<div class="box ">
+<div class="card fl">
+    <div class="icon"><i class="fa-solid fa-chart-column fa-3x"></i></div>
+    <div class="content">
+        <span class="c1 ">Solution</span><br>
+        <br>
+        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+
+
+    </div>
+</div>
+<div class="card fl">
+    <div class="icon"><i class="fa-solid fa-hand-holding-dollar fa-3x"></i></i></div>
+    <div class="content">
+        <span class="c1">Preminum Services</span><br>
+        <br>
+
+        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+
+    </div>
+</div>
+<div class="card fl">
+    <div class="icon"><i class="fa-solid fa-headphones-simple fa-3x"></i></div>
+    <div class="content">
+        <span class="c1">Help and Support</span><br>
+        <br>
+
+        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+
+    </div>
+  
+    
+    
+
+
+</div>
+
+</div>
+
+
+<!-- 2nd image baner start -->
+
+
+
+
+<div class="spy">
+<span style="margin-left:50%; color: orangered;">About us</span>
+<h2  class="text-center text-capitalize ">
+    We Desgin bulid sell & create <br> digital Project
+</h2>
+<p  class="text-center text-capitalize">
+    Polygon HTML5 theme features image gallery, about page, services with hexagon icon boxes,
+</p>
+</div>
+<div class="container ">
+
+    <img src="img/spidy.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="296">
+
+<br><br>
+<br><br>
+<!-- 2nd image baner close -->
+<!-- images -->
+<!--banner-->
+<div id="carouselExampleCaptions" class="carousel slide my-5 " data-bs-ride="false">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 1"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/pic1.jpg" class="d-block w-100" alt="slide1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-1">First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/pic2.jpg" class="d-block w-100" alt="slide2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-1">Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+            <div class="carousel-item">
+                <img src="img/pic3.jpg" class="d-block w-100" alt="slide2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-1">Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/pic6.jpg" class="d-block w-100" alt="slide2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-1">Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+                <div class="carousel-item">
+                    <img src="img/pic5.jpg" class="d-block w-100" alt="slide2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-1">Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+        <div class="carousel-item">
+            <img src="img/pic4.jpg" class="d-block w-100" alt="slide3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-1">Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<!--<div class="display-1 text-center text-primary">Unit Book  <br>the open source technology</div>-->
+<div class="container border my-5 rounded bg-primary " style="height:100vh;">
+  <div id="std">
+<p class="text-center h2 py-3 text-white">Article</p>
+<p class="text-justify text-white">
+InBio is a one-page responsive personal portfolio layout which can be utilized to demonstrate your inventiveness. It’s
+an ideal decision for a developer, engineer, specialist, designer, content writer, Instructor, Photographer, Freelancer,
+Politician, Software engineer, Teacher or some other expert who needs to speak to his abilities and inventive work.
+InBio is well documented, very easy to use, Easily Customized, loads faster and provides better performance.Trending
+Homlisti – Real Estate WordPress Theme + RTL - Real Estate WordPress
+Live Preview
+Real Estate WordPress Theme
+
+Homlisti – Real Estate WordPress Theme
+Demo site access
+Real Estate Classified ads WordPress Theme
+Homlisti is the best Real Estate WordPress theme with a creatively crafted, clean, contemporary, and classy layout. It
+has multiple features that make it perfect for showcasing your classified ads. Although it can serve websites in
+different niches, Homlisti is ideally suited to real estate websites. This theme is a top-quality theme, from its ease
+of customization to its customization extensions. Since it is compatible with Gutenberg, Homlisti lets you use
+WordPress’s native user-friendly block builder to create your pages.
+
+Real Estate WordPress Theme
+
+This theme comes with the Elementor Page Builder, which is a popular choice with over 5 million active installations all
+over the globe. Both Elementor and Gutenberg allow you to customize your site using a drag & drop interface. This theme
+supports the live customizer for easy previews before publishing. The theme’s basic features include 4 multi homepages.
+These homepage demos are fully equipped with pages and elements that a real estate listing website needs. Since Homlisti
+has the One-Click Demo Importer, you can install the demo you want your site to resemble in a single click.
+
+Homlisti offers 4 unique header styles that can do more than 5 header variations. You can also edit the 2 footer styles
+extensively for remarkable results. Homlisti has various page variations, including 5 property layouts and 3 property
+detail layouts. You can use the 2 blog layouts to write SEO content. As you do so, you can make use of any of the 800+
+Google Fonts, combining them as you wish.
+
+You can control the theme options to affect the entire website from one place due to the robust Redux admin panel. Since
+Homlisti comes with the Child Theme, you can edit the parent theme extensively without losing the original layouts or
+the ones you create.
+
+With Homlisti, you can showcase your custom ad fields in list view or using a robust search filter for more
+user-friendly views. You also get to control the fields for the listing and detail views of all the ads. With
+Ajax-enablement, you have search auto-completion and powerful category and location filters. Among the addons that you
+get with Homlisti are the Membership and WooCommerce enablement. The theme provides the option to view the real estate
+listings using a list map view. It also provides a map widget.
+
+Homlisti comes with ReCAPTCHA control for login, registration, abuse, listing posting, and the contact form. The social
+share feature gives your users the freedom to share listings on Twitter, LinkedIn, Facebook, Google Plus, and Pinterest.
+Homlisti is also fully responsive and fluid and has excellent mobile versions. It accommodates various payment gateways,
+including Authorize.net, PayPal, and Stripe. It makes your site translation ready and cross-browser compatible.
+
+UNLIMITED CUSTOM FIELDS
+You can have unlimited categories with this theme. With a larger user base, you will also need the unlimited custom
+fields option that comes with Homlisti. Multiple Ad Types. With Homlisti, users can present various types of ads
+depending on what they want with their ads. They can be buy, sell, or to-let ads, and you can control this from the
+admin end.
+
+USER DASHBOARD
+Apart from the admin’s dashboard, Homlisti avails each front-end user their own dashboard that they can control from
+their end. It is important to post new ads, promote single ads, check payments, delete ads, check favorite ads, and edit
+ads.
+
+EARN FROM AD POSTING
+Homlisti allows the site owner to earn money from posting various ad promotion options. Users can pay or pay more for
+top ads, bump up, and featured ads.
+
+MEMBERSHIP OPTION
+Homlisti has an agent facility that lets you earn more from having site membership and subscription. You can allow the
+members permission to all categories or the entire site and allow them a higher number of ads.
+
+AGENCY & AGENT FACILITY
+With Homlisti, each one of your users can create their own separate stores. They can add big banners with business
+descriptions and the opening and closing times of the Agency page. This gives the visitors all the information and ads </p>
+  </div>
+    
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
