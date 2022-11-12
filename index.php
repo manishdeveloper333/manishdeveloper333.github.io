@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Bootstrap Template -One</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <style>
         #click1:hover {
             color: blue;
@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"><img class="img-fluid " src="assets/img/01.svg" alt="manishdeveloper" /></div>
+                    <div class="p-5"><img class="img-fluid " src="01.svg" alt="manishdeveloper" /></div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
@@ -96,7 +96,7 @@ if (isset($_POST['submit'])) {
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
-                    <div class="p-5"><img class="img-fluid " src="assets/img/02.svg" alt="manishdeveloper" /></div>
+                    <div class="p-5"><img class="img-fluid " src="02.svg" alt="manishdeveloper" /></div>
                 </div>
                 <div class="col-lg-6">
                     <div class="p-5">
@@ -115,7 +115,7 @@ if (isset($_POST['submit'])) {
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6 order-lg-2">
-                    <div class="p-5"><img class="img-fluid " src="assets/img/03.svg" alt="manishdeveloper" /></div>
+                    <div class="p-5"><img class="img-fluid " src="03.svg" alt="manishdeveloper" /></div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="p-5">
